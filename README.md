@@ -15,7 +15,7 @@
 
 ## Description
 
-Le club "LyonPalme" est une association sportive de natation avec palmes : monopalme ou bi-palmes. Il compte une quarantaine d'adhérents et son siège est à Saint-Fons. Notre application de gestion matériel permet de gérer le matériel du club. Ce site est destiné au responsable du matériel qui pourra après s’être connecter, voir le stock et ajouter du matériel au stock, voir les prêt en affichant les emprunts que les nageurs ont faits à l’association et ainsi ajouter et retirer un prêt et donné son état de retour.
+Le club "LyonPalme" est une association sportive de natation avec palmes : monopalme ou bi-palmes. Il compte une quarantaine d'adhérents et son siège est à Saint-Fons. L'application de gestion matériel permet de gérer le matériel du club. Ce site est destiné au responsable du matériel qui pourra après s’être connecter, voir le stock et ajouter du matériel au stock, voir les prêt en affichant les emprunts que les nageurs ont faits à l’association et ainsi ajouter et retirer un prêt et donné son état de retour.
 Elle permet également de « tracer » le matériel c’est-à-dire pour un matériel, connaitre toutes les personnes à qui il a été prêté. Ceci permet de retrouver la personne responsable en cas de détérioration du matériel.
 
 
