@@ -40,7 +40,7 @@ Pour exécuter ce projet, vous devez avoir Windows, Visual Studio, Microsoft SQL
 ## Installation
 Tout d'abord, vous devez cloner le projet :
 
-
+git clone https://github.com/Lilly-22/gestion_materiel_.git
 
 ## Créer le premier user
 ## Utilisation
