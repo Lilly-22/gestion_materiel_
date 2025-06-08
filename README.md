@@ -9,8 +9,9 @@
 - [Diagramme de cas d'utilisation](#diagramme-de-cas-dutilisation)
 - [Prérequis](#prérequis)
 - [Installation](#installation)
-- [Créer le premier user](#créer-le-premier-user)
 - [Utilisation](#utilisation)
+- [Dépendances](#dépendances)
+
 
 
 ## Description
@@ -35,16 +36,50 @@ Elle permet également de « tracer » le matériel c’est-à-dire pour un mat�
 ![Diagramme de cas GM](https://github.com/user-attachments/assets/d1d36bf9-df61-42b5-bf2b-079f1df7ee6b)
 
 ## Prérequis
-Pour exécuter ce projet, vous devez avoir Windows, Visual Studio, Microsoft SQL Server, le Framework .Net 6.0 et Git.
+Pour exécuter ce projet, vous devez avoir Windows, Visual Studio, Microsoft SQL Server, le Framework .Net 6.0 et Git. Assurez-vous d'être connecté au réseau de l'établissement ou utiliser openVPN.
 
 ## Installation
 Tout d'abord, vous devez cloner le projet :
-
+```xml
 git clone https://github.com/Lilly-22/gestion_materiel_.git
+```
 
-## Créer le premier user
+Ouvrez le projet dans votre environnement de développement intégré (IDE).
+
+Créez un nouveau fichier `App.config` dans le répertoire racine du projet.
+
+Dans le fichier `App.config`, ajoutez le code nécessaire pour configurer l'accès à la base de données.  Voici un exemple de ce à quoi pourrait ressembler votre fichier `App.config` :
+```xml
+<configuration>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+	</startup>
+	<connectionStrings>
+		<add name="sqlserver_lyonpalme" connectionString="Data Source=192.168.100.236;Initial Catalog=user_de_bdd;User ID=User_lp;Password=MDP-lp"
+			 providerName="System.Data.SqlClient" />
+	</connectionStrings>
+
+</configuration>
+```
+
+Voici donc l'utilisateur admin pour se connecter à l'application lorsque vous l'avez executer :
+
+| **Login** | **Mot de passe** |
+| ------- | ------------- |
+| jdupont | MonSuperMotDePasse |
+
+
 ## Utilisation
+Pour utiliser l'application, il faut tout d'abord s'y connecter et seul l'administrateur le peut. Lorsqu'il se connecte, il se retrouve sur la page d'accueil où il retrouvera la liste de tout le matériel de l'association. Sur le côté, plusieurs boutons sont disponibles :
 
+- Voir les prêts : affiche tous les emprunts que les nageurs ont faits à l'association. Cette page permet également l'accès à la page d'ajout d'un prêt.
+- Ajout Combinaison : permet d'ajouter un nouveau matériel (une combinaison avec sa taille, sa saison et sa marque).
+- Ajout Monopalme : ajoute un nouveau matériel (Monopalme, avec sa pointure, son type et sa marque).
+- Voir Nageurs : où l'on peut voir la liste des nageurs.
+
+## Dépendances
+
+L'application dépend d'une base de données. Si nous ne sommes pas connectés au réseau de l'établissement, l'accès ne se fera pas et l'application ne fonctionnera pas.
 
 
 
