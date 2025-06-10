@@ -62,6 +62,9 @@ Dans le fichier `App.config`, ajoutez le code nécessaire pour configurer l'acc�
 </configuration>
 ```
 
+ - Une fois ses modifications effectuées, l'utilisateur devra se diriger dans le dossier suivant \bin\Debug où il trouvera l'exécutable.
+ 
+
 Voici donc l'utilisateur admin pour se connecter à l'application lorsque vous l'avez executer :
 
 | **Login** | **Mot de passe** |
@@ -70,17 +73,16 @@ Voici donc l'utilisateur admin pour se connecter à l'application lorsque vous l
 
 
 ## Utilisation
-Pour utiliser l'application, il faut tout d'abord s'y connecter et seul l'administrateur le peut. Lorsqu'il se connecte, il se retrouve sur la page d'accueil où il retrouvera la liste de tout le matériel de l'association. Sur le côté, plusieurs boutons sont disponibles :
+Pour utiliser l'application, il faut tout d'abord s'y connecter et seul l'administrateur le peut. L'utilisateur sera ensuite redirigé vers une page où il aura le choix entre visualiser le stock et voir les matériels qui sont en train d'être prêtés.
+ 
+- Page pour visualiser le stock : Au sein de cette page, l'utilisateur peut ajouter du matériel à son stock et aussi ajouter un nouveau prêt.
 
-- Voir les prêts : affiche tous les emprunts que les nageurs ont faits à l'association. Cette page permet également l'accès à la page d'ajout d'un prêt.
-- Ajout Combinaison : permet d'ajouter un nouveau matériel (une combinaison avec sa taille, sa saison et sa marque).
-- Ajout Monopalme : ajoute un nouveau matériel (Monopalme, avec sa pointure, son type et sa marque).
-- Voir Nageurs : où l'on peut voir la liste des nageurs.
+- Page où l'on voit les prêts en cours : Au sein de cette page, l'utilisateur pourra récupérer les prêts en cours.
 
 ## Dépendances
-
-L'application dépend d'une base de données. Si nous ne sommes pas connectés au réseau de l'établissement, l'accès ne se fera pas et l'application ne fonctionnera pas.
-
+ 
+L'application dépend d'une base de données (SQL Serveur). Si nous ne sommes pas connectés au réseau de l'établissement (ou a un vpn) , l'application ne fonctionnera pas.
+ 
 
 
 
